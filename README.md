@@ -1,10 +1,18 @@
 # MG Advokater – FAQ-sida
 
-Källorna till FAQ-sidan för [mgadvokater.se](https://www.mgadvokater.se/). Varje ändring som committas här byggs och publiceras automatiskt till förhandsvisningen:
+Källorna till FAQ-sidan för [mgadvokater.se](https://www.mgadvokater.se/). Varje ändring som committas här byggs, valideras och publiceras automatiskt till:
 
 **➡️ https://ulrik-s.github.io/mga/**
 
-Offertförfrågningssidan finns på **https://ulrik-s.github.io/mga/offertforfragan/**.
+---
+
+## Kom igång som redaktör (engångssteg)
+
+1. **Skaffa ett gratis GitHub-konto** på [github.com/signup](https://github.com/signup) — e-postadress och lösenord räcker.
+2. **Meddela ditt användarnamn till Ulrik**, som bjuder in dig till repot. Du får ett mejl *"You've been invited to collaborate"* — klicka **Accept invitation**.
+3. **Bokmärk redigeringslänken:** <https://github.com/ulrik-s/mga/edit/main/faq-innehall.json>
+
+Klart. Därefter gäller arbetsflödet nedan.
 
 ---
 
@@ -49,7 +57,9 @@ Den genererade filen `vanliga-fragor-mgadvokater.html` checkas inte in (se `.git
 
 **Publicera till produktion (mgadvokater.se):** kör skriptet lokalt eller hämta `github-pages`-artefakten från senaste körningen under **Actions**. Använd **inte** HTML sparad direkt från förhandsvisningssajten — den har `noindex` injicerat, avsiktligt, så att Google inte indexerar förhandsvisningen som dubblett av den riktiga sidan.
 
+**Bjuda in en ny redaktör:** repot → **Settings → Collaborators and teams → Add people** → skriv in personens GitHub-användarnamn → roll **Write**. Personen accepterar inbjudan via mejl och kan därefter committa direkt via redigeringslänken.
+
 **Kom ihåg:**
 - Oktober 2026: Lundakontoret flyttar till Mårtenstorget 10 A — uppdatera `faq-innehall.json` (frågan `q-kontor`) och adressen i mallens JSON-LD.
 - Ny rättshjälpstaxa varje årsskifte — uppdatera belopp och årtal i innehållsfilen samt `priceRange` i mallen.
-- Vill ni ha granskning innan publicering: låt redaktörer committa till en branch och öppna pull request i stället för att committa direkt till `main`.
+- Vill ni ha granskning innan publicering: bjud **inte** in personen som collaborator — då blir hens webbredigeringar automatiskt en fork + pull request som du godkänner innan de publiceras.
