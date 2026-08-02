@@ -25,7 +25,17 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generera FAQ-sidan (validerar innehållet)
-        run: python3 bygg_faq.py
+        run: |
+          set -o pipefail
+          if ! python3 bygg_faq.py 2>&1 | tee bygg.log; then
+            {
+              echo "### ❌ Publiceringen stoppades — fel i faq-innehall.json"
+              echo '```'
+              cat bygg.log
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
 
       - name: Sätt ihop sajten
         run: |

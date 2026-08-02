@@ -69,7 +69,8 @@
         {
           "id": "q-rattshjalp",
           "question": "Vad är rättshjälp och vem kan få den?",
-          "answer": "Rättshjälp är statligt stöd som kan beviljas när tvist har uppstått och när försäkring saknas eller inte kan utnyttjas. Ansökan fyller vi i gemensamt vid det första mötet. Din egenavgift är mellan 2 och 40 procent av kostnaden beroende på din inkomst. Det finns ett tak som innebär att höginkomsttagare utan stora skulder eller omfattande underhållsskyldighet mot barn inte kan beviljas rättshjälp."label": "Läs mer på sidan Kostnad →" }"
+          "answer": "Rättshjälp är statligt stöd som kan beviljas när tvist har uppstått och när försäkring saknas eller inte kan utnyttjas. Ansökan fyller vi i gemensamt vid det första mötet. Din egenavgift är mellan 2 och 40 procent av kostnaden beroende på din inkomst. Det finns ett tak som innebär att höginkomsttagare utan stora skulder eller omfattande underhållsskyldighet mot barn inte kan beviljas rättshjälp.",
+          "source": { "url": "https://www.mgadvokater.se/kostnad/", "label": "Läs mer på sidan Kostnad →" }
         },
         {
           "id": "q-nekad-finansiering",
