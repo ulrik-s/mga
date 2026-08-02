@@ -1,0 +1,52 @@
+name: Bygg och publicera FAQ till GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  bygg-och-publicera:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Hämta koden
+        uses: actions/checkout@v4
+
+      - name: Generera FAQ-sidan (validerar innehållet)
+        run: python3 bygg_faq.py
+
+      - name: Sätt ihop sajten
+        run: |
+          mkdir -p _site/offertforfragan
+          cp vanliga-fragor-mgadvokater.html _site/index.html
+          cp offertforfragan-mgadvokater.html _site/offertforfragan/index.html
+          # Förhandsvisningen ska inte indexeras av sökmotorer —
+          # produktionsversionen publiceras på mgadvokater.se.
+          sed -i 's|<meta name="robots" content="index, follow|<meta name="robots" content="noindex, nofollow|' \
+            _site/index.html _site/offertforfragan/index.html
+
+      - name: Konfigurera GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Ladda upp sajten
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Publicera
+        id: deployment
+        uses: actions/deploy-pages@v4

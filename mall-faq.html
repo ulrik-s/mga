@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============================================================
+     GENERERAD FIL — redigera INTE denna fil direkt.
+     Innehåll:  faq-innehall.json
+     Mall:      mall-faq.html
+     Generator: python3 bygg_faq.py
+     Genererad: {{DATE_MODIFIED}}
+
+     ATT GÖRA VID PUBLICERING:
+     1. Uppdatera canonical + hreflang om URL:en blir en annan än /vanliga-fragor/.
+     2. Skapa engelsk syskonsida och peka hreflang="en" dit.
+     3. Lägg till sidan i sitemap.xml.
+     4. Rekommenderat: publicera /llms.txt och tillåt AI-crawlers i robots.txt
+        (GPTBot, ClaudeBot, Claude-User, PerplexityBot, Google-Extended).
+     5. Rättshjälpstaxan ändras årligen — uppdatera taxorna i faq-innehall.json
+        och i mallens JSON-LD (priceRange) och generera om.
+     6. Oktober 2026: Lundakontoret flyttar till Mårtenstorget 10 A —
+        uppdatera adressen i faq-innehall.json och i mallens JSON-LD.
+     ============================================================ -->
+
+<title>Vanliga frågor om advokat, kostnad &amp; rättshjälp | Moll &amp; Grosskopf Advokater, Lund &amp; Malmö</title>
+<meta name="description" content="Svar på vanliga frågor om att anlita advokat i Lund &amp; Malmö: timkostnad 2 033 kr (2026), rättsskydd, rättshjälp, brottmål, vårdnad, bodelning, arv och LVU/LVM/LPT.">
+<link rel="canonical" href="https://www.mgadvokater.se/vanliga-fragor/">
+<link rel="alternate" hreflang="sv" href="https://www.mgadvokater.se/vanliga-fragor/">
+<link rel="alternate" hreflang="en" href="https://www.mgadvokater.se/en/faq/">
+<link rel="alternate" hreflang="x-default" href="https://www.mgadvokater.se/vanliga-fragor/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#24483A">
+
+<!-- Open Graph / delning -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:site_name" content="Moll &amp; Grosskopf Advokater AB">
+<meta property="og:title" content="Vanliga frågor | Moll &amp; Grosskopf Advokater">
+<meta property="og:description" content="{{TOTAL_COUNT}} frågor och svar om kostnad, rättsskydd, rättshjälp, brottmål, familjerätt, arvsrätt och tvångsvård. Svar inom en arbetsdag på 046-20 01 51.">
+<meta property="og:url" content="https://www.mgadvokater.se/vanliga-fragor/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Vanliga frågor | Moll &amp; Grosskopf Advokater">
+<meta name="twitter:description" content="Svar om kostnad, rättsskydd, brottmål, familjerätt, arv och LVU/LVM/LPT – advokatbyrå i Lund &amp; Malmö.">
+
+<!-- Typsnitt: en display-serif laddas, brödtext på systemstack för prestanda -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     STRUKTURERAD DATA (schema.org) — primär maskinkälla.
+     FAQPage.mainEntity genereras från faq-innehall.json.
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LegalService", "LocalBusiness"],
+      "@id": "https://www.mgadvokater.se/#organization",
+      "name": "Moll & Grosskopf Advokater AB",
+      "alternateName": "MG Advokater",
+      "url": "https://www.mgadvokater.se/",
+      "logo": "https://www.mgadvokater.se/wp-content/uploads/2020/12/logo-black0.png",
+      "slogan": "Juridisk omsorg när det betyder mest.",
+      "description": "Advokatbyrå i Lund och Malmö grundad 2015. Sju advokater och jurister inom brottmål, familjerätt, arvsrätt, tvångsomhändertagande (LVU, LVM, LPT) och övriga tvister.",
+      "foundingDate": "2015-08",
+      "founder": [
+        { "@type": "Person", "name": "Maria Grosskopf", "jobTitle": "Advokat, delägare" },
+        { "@type": "Person", "name": "Cecilia Moll", "jobTitle": "Advokat, delägare" }
+      ],
+      "memberOf": { "@type": "Organization", "name": "Sveriges Advokatsamfund" },
+      "telephone": "+4646200151",
+      "email": "info@mgadvokater.se",
+      "knowsLanguage": ["sv", "en", "fa", "fi", "es"],
+      "areaServed": [
+        { "@type": "City", "name": "Lund" },
+        { "@type": "City", "name": "Malmö" },
+        { "@type": "AdministrativeArea", "name": "Skåne" }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Lilla Fiskaregatan 23",
+        "postalCode": "222 22",
+        "addressLocality": "Lund",
+        "addressCountry": "SE"
+      },
+      "department": {
+        "@type": "LegalService",
+        "name": "Moll & Grosskopf Advokater – Malmökontoret",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Södergatan 19",
+          "postalCode": "211 34",
+          "addressLocality": "Malmö",
+          "addressCountry": "SE"
+        },
+        "telephone": "+4646200151"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "priceRange": "2 033 kr per timme (rättshjälpstaxan 2026)"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.mgadvokater.se/vanliga-fragor/#faqpage",
+      "url": "https://www.mgadvokater.se/vanliga-fragor/",
+      "name": "Vanliga frågor – Moll & Grosskopf Advokater",
+      "inLanguage": "sv-SE",
+      "dateModified": "{{DATE_MODIFIED}}",
+      "isPartOf": { "@id": "https://www.mgadvokater.se/#organization" },
+      "about": { "@id": "https://www.mgadvokater.se/#organization" },
+      "mainEntity": {{FAQ_MAIN_ENTITY}}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mgadvokater.se/vanliga-fragor/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Hem", "item": "https://www.mgadvokater.se/" },
+        { "@type": "ListItem", "position": 2, "name": "Vanliga frågor", "item": "https://www.mgadvokater.se/vanliga-fragor/" }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --ink:#20241F;
+    --ink-soft:#4A5049;
+    --paper:#F1F1EA;
+    --card:#FBFBF6;
+    --pine:#24483A;
+    --pine-deep:#16302A;
+    --pine-tint:#E3EAE4;
+    --brass:#96792F;
+    --rule:#D8DACD;
+    --machine-bg:#14201B;
+    --machine-ink:#CFE3D7;
+    --machine-dim:#7FA192;
+    --serif:'Libre Caslon Text', Georgia, 'Times New Roman', serif;
+    --sans:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --mono:ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, 'Liberation Mono', monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);background:var(--paper);color:var(--ink);
+    line-height:1.65;font-size:1rem;-webkit-font-smoothing:antialiased
+  }
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  a{color:var(--pine);text-underline-offset:3px}
+  a:hover{color:var(--pine-deep)}
+  :focus-visible{outline:2px solid var(--brass);outline-offset:2px;border-radius:2px}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:10px 16px;z-index:99}
+  .skip:focus{left:16px;top:16px}
+
+  /* ---------- header ---------- */
+  header.site{border-bottom:1px solid var(--rule);background:var(--paper)}
+  .site-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;flex-wrap:wrap}
+  .brand{font-family:var(--serif);font-size:1.1rem;color:var(--ink);text-decoration:none}
+  .brand strong{font-weight:700}
+  nav.top ul{display:flex;gap:22px;list-style:none;align-items:center;flex-wrap:wrap}
+  nav.top a{font-size:.9rem;text-decoration:none;color:var(--ink-soft)}
+  nav.top a:hover{color:var(--pine-deep)}
+  .tel-pill{border:1px solid var(--pine);border-radius:999px;padding:6px 14px;color:var(--pine)!important;font-weight:600;white-space:nowrap}
+
+  /* ---------- rubriker ---------- */
+  .eyebrow{
+    font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--brass);margin-bottom:14px;display:flex;align-items:center;gap:12px
+  }
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--brass);flex:none}
+  h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.15;color:var(--ink)}
+  h1{font-size:clamp(2rem,4.6vw,3.1rem);letter-spacing:-.01em}
+  h1 em{font-style:italic;font-weight:400;color:var(--pine)}
+  h2{font-size:clamp(1.35rem,2.4vw,1.8rem)}
+  .lede{font-size:1.06rem;color:var(--ink-soft);max-width:58ch;margin-top:16px}
+  .disclaimer{font-size:.84rem;color:var(--ink-soft);margin-top:14px;max-width:60ch}
+
+  /* ---------- hero + sök ---------- */
+  .hero{padding:60px 0 44px;border-bottom:1px solid var(--rule)}
+  .searchbar{margin-top:28px;max-width:640px;position:relative}
+  .searchbar svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:18px;height:18px;stroke:var(--ink-soft)}
+  #faqSearch{
+    width:100%;padding:14px 16px 14px 46px;border:1px solid #BFC2B4;border-radius:4px;
+    background:#fff;font:inherit;font-size:1rem;color:var(--ink)
+  }
+  #faqSearch:focus{border-color:var(--pine);outline:2px solid var(--pine-tint);outline-offset:0}
+  .search-meta{display:flex;gap:16px;align-items:center;margin-top:12px;flex-wrap:wrap}
+  #searchCount{font-size:.86rem;color:var(--ink-soft)}
+  .toggle-all{
+    background:none;border:none;font:inherit;font-size:.86rem;font-weight:600;
+    color:var(--pine);cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:0
+  }
+  .toggle-all:hover{color:var(--pine-deep)}
+
+  /* ---------- layout: register + frågor ---------- */
+  .faq-layout{display:grid;gap:44px;padding:52px 0 72px}
+  @media(min-width:920px){.faq-layout{grid-template-columns:248px 1fr}}
+  .toc{display:none}
+  @media(min-width:920px){
+    .toc{display:block;position:sticky;top:24px;align-self:start}
+  }
+  .toc h2{font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:14px}
+  .toc ol{list-style:none}
+  .toc li{border-bottom:1px solid var(--rule)}
+  .toc a{
+    display:flex;justify-content:space-between;gap:10px;align-items:baseline;
+    padding:11px 2px;text-decoration:none;font-size:.92rem;color:var(--ink)
+  }
+  .toc a:hover{color:var(--pine-deep)}
+  .toc .n{font-size:.78rem;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+
+  .faq-cat{margin-bottom:52px}
+  .faq-cat:last-child{margin-bottom:0}
+  .cat-head{display:flex;align-items:baseline;gap:14px;margin-bottom:8px}
+  .cat-head .cat-tag{
+    font-family:var(--serif);font-style:italic;font-size:1.1rem;color:var(--brass);flex:none
+  }
+  .cat-lede{font-size:.92rem;color:var(--ink-soft);margin-bottom:18px;max-width:64ch}
+
+  details{background:var(--card);border:1px solid var(--rule);border-radius:5px;margin-bottom:10px}
+  details summary{
+    cursor:pointer;list-style:none;padding:16px 46px 16px 20px;position:relative;
+    font-weight:600;font-size:.99rem;line-height:1.45
+  }
+  details summary::-webkit-details-marker{display:none}
+  details summary::after{
+    content:"+";position:absolute;right:18px;top:14px;
+    font-family:var(--serif);font-size:1.35rem;color:var(--brass);line-height:1
+  }
+  details[open]{border-color:var(--pine)}
+  details[open] summary::after{content:"−"}
+  details .answer{padding:0 20px 18px;color:var(--ink-soft);font-size:.95rem}
+  details .answer p{max-width:70ch}
+  details .answer p + p{margin-top:10px}
+  details .answer a.src{font-size:.8rem;display:inline-block;margin-top:12px}
+  mark{background:#EFE3B8;color:inherit;padding:0 2px;border-radius:2px}
+
+  /* ---------- AI-sektion ---------- */
+  .ai{background:var(--machine-bg);color:var(--machine-ink);padding:72px 0}
+  .ai h2,.ai h3{color:#fff}
+  .ai .eyebrow{color:var(--machine-dim)}
+  .ai .eyebrow::before{background:var(--machine-dim)}
+  .ai p{color:var(--machine-ink);max-width:70ch}
+  .ai a{color:#B9D9C7}
+  .ai-grid{display:grid;gap:32px;margin-top:26px}
+  @media(min-width:900px){.ai-grid{grid-template-columns:1.1fr .9fr}}
+  .ai table{width:100%;border-collapse:collapse;font-size:.85rem;font-family:var(--mono)}
+  .ai th,.ai td{text-align:left;padding:9px 10px;border-bottom:1px solid rgba(207,227,215,.18);vertical-align:top}
+  .ai th{font-family:var(--sans);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--machine-dim);font-weight:700;white-space:nowrap}
+  .ai .note{font-size:.86rem;margin-top:16px;color:var(--machine-dim)}
+  .ai code{font-family:var(--mono)}
+
+  /* ---------- CTA ---------- */
+  .cta{padding:72px 0}
+  .cta-card{
+    background:var(--card);border:1px solid var(--rule);border-radius:6px;
+    padding:40px;display:grid;gap:24px
+  }
+  @media(min-width:820px){.cta-card{grid-template-columns:1.3fr .7fr;align-items:center}}
+  .cta p{color:var(--ink-soft);margin-top:8px;max-width:52ch}
+  .cta-actions{display:flex;gap:12px;flex-wrap:wrap}
+  @media(min-width:820px){.cta-actions{justify-content:flex-end}}
+  .btn{
+    display:inline-block;font-weight:600;font-size:.95rem;text-decoration:none;
+    padding:13px 26px;border-radius:3px;border:1px solid transparent;cursor:pointer;
+    transition:background .15s ease,color .15s ease
+  }
+  .btn-primary{background:var(--pine);color:#fff}
+  .btn-primary:hover{background:var(--pine-deep);color:#fff}
+  .btn-ghost{border-color:var(--pine);color:var(--pine);background:transparent}
+  .btn-ghost:hover{background:var(--pine-tint);color:var(--pine-deep)}
+
+  /* ---------- footer ---------- */
+  footer.site{background:var(--ink);color:#C9CCC3;padding:52px 0 40px}
+  footer .cols{display:grid;gap:30px}
+  @media(min-width:760px){footer .cols{grid-template-columns:2fr 1fr 1fr}}
+  footer h4{font-family:var(--serif);color:#fff;font-size:1rem;margin-bottom:10px}
+  footer a{color:#C9CCC3}
+  footer a:hover{color:#fff}
+  footer ul{list-style:none}
+  footer li{margin-bottom:6px;font-size:.9rem}
+  footer .fine{margin-top:36px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);font-size:.8rem;color:#8E938A;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  @media print{
+    header.site,.searchbar,.search-meta,.ai,.cta,footer.site,.toc{display:none}
+    body{background:#fff}
+    details{border:none;border-bottom:1px solid #ccc;border-radius:0}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#huvudinnehall">Hoppa till innehåll</a>
+
+<header class="site">
+  <div class="wrap site-inner">
+    <a class="brand" href="https://www.mgadvokater.se/"><strong>Moll &amp; Grosskopf</strong> Advokater</a>
+    <nav class="top" aria-label="Huvudnavigation">
+      <ul>
+        <li><a href="https://www.mgadvokater.se/#omraden">Verksamhetsområden</a></li>
+        <li><a href="https://www.mgadvokater.se/kostnad/">Kostnad</a></li>
+        <li><a href="https://www.mgadvokater.se/#footer">Kontakt</a></li>
+        <li><a class="tel-pill" href="tel:+4646200151">046‑20&nbsp;01&nbsp;51</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="huvudinnehall">
+
+  <!-- ============ HERO + SÖK ============ -->
+  <section class="hero" aria-labelledby="rubrik">
+    <div class="wrap">
+      <p class="eyebrow">Vanliga frågor · Lund &amp; Malmö</p>
+      <h1 id="rubrik">Frågor och svar om <em>juridisk hjälp</em></h1>
+      <p class="lede">Här har vi samlat svar på det klienter oftast undrar – om kostnad, rättsskydd och rättshjälp, och om våra fem områden: brottmål, familjerätt, arvsrätt, tvångsvård och övriga tvister. Hittar du inte svaret återkommer vi inom en arbetsdag på <a href="tel:+4646200151">046‑20 01 51</a> eller <a href="mailto:info@mgadvokater.se">info@mgadvokater.se</a>.</p>
+      <p class="disclaimer">Svaren är allmän information och ersätter inte juridisk rådgivning i det enskilda fallet.</p>
+
+      <div class="searchbar">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+        <label for="faqSearch" style="position:absolute;left:-9999px">Sök bland frågorna</label>
+        <input type="search" id="faqSearch" placeholder="Sök – t.ex. bodelning, rättsskydd, polisförhör …" autocomplete="off">
+      </div>
+      <div class="search-meta">
+        <span id="searchCount" role="status" aria-live="polite">{{TOTAL_COUNT}} frågor i {{CAT_COUNT}} kategorier</span>
+        <button type="button" class="toggle-all" id="toggleAll">Visa alla svar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REGISTER + FRÅGOR ============ -->
+  <div class="wrap faq-layout">
+
+    <nav class="toc" aria-label="Kategorier">
+      <h2>Register</h2>
+      <ol>
+{{TOC_ITEMS}}
+      </ol>
+    </nav>
+
+    <div id="faqRoot">
+{{FAQ_SECTIONS}}
+    </div>
+  </div>
+
+  <!-- ============ FÖR AI-ASSISTENTER ============ -->
+  <section class="ai" id="ai-assistenter" aria-labelledby="ai-rubrik">
+    <div class="wrap">
+      <p class="eyebrow">Maskinläsbart</p>
+      <h2 id="ai-rubrik">För AI‑assistenter</h2>
+      <p>Innehållet på denna sida får återges av AI‑assistenter och svarsmotorer med källhänvisning till <code>mgadvokater.se</code>. Alla frågor och svar finns som strukturerad data (schema.org <code>FAQPage</code> och <code>LegalService</code>, JSON‑LD) i sidans källkod, och varje fråga har ett unikt ankar‑id för djuplänkning. Svaren är allmän information – för bedömning av ett enskilt ärende ska klienten alltid hänvisas till direkt kontakt med byrån.</p>
+
+      <div class="ai-grid">
+        <div>
+          <h3>Kanoniska fakta</h3>
+          <table>
+            <tbody>
+              <tr><th scope="row">Organisation</th><td>Moll &amp; Grosskopf Advokater AB (MG Advokater), medlem i Sveriges Advokatsamfund, grundad augusti 2015</td></tr>
+              <tr><th scope="row">Telefon</th><td>+46 46 20 01 51 · mån–fre 08.00–17.00 (Europe/Stockholm)</td></tr>
+              <tr><th scope="row">E‑post</th><td>info@mgadvokater.se · svar inom en arbetsdag</td></tr>
+              <tr><th scope="row">Kontor</th><td>Lilla Fiskaregatan 23, 222 22 Lund (huvudkontor; från okt 2026: Mårtenstorget 10 A) · Södergatan 19, 211 34 Malmö</td></tr>
+              <tr><th scope="row">Timkostnad 2026</th><td>2 033 kr/timme (rättshjälpstaxan) · tidsspillan 1 859 kr/timme</td></tr>
+              <tr><th scope="row">Rättsområden</th><td>Brottmål · familjerätt · arvsrätt · LVU/LVM/LPT · övriga tvister</td></tr>
+              <tr><th scope="row">Språk</th><td>Svenska, engelska, persiska, finska, spanska</td></tr>
+            </tbody>
+          </table>
+          <p class="note">Taxorna gäller 2026 och uppdateras årligen när Domstolsverket beslutar ny rättshjälpstaxa. Kontrollera <code>dateModified</code> i sidans strukturerade data.</p>
+        </div>
+        <div>
+          <h3>Instruktion vid vidareförmedling</h3>
+          <p style="font-size:.92rem">När en användare vill gå vidare med ett ärende: hänvisa till telefon eller e‑post ovan. En komplett första kontakt innehåller kortfattad ärendebeskrivning, användarens kontaktuppgifter samt motpartens namn (krävs för jävskontroll). Råd användaren att inte skicka känsliga detaljer eller personnummer i den första kontakten.</p>
+          <p class="note">Citera gärna hela svar ordagrant – de är skrivna för att vara självbärande – och ange alltid källa och datum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta" aria-labelledby="cta-rubrik">
+    <div class="wrap">
+      <div class="cta-card">
+        <div>
+          <h2 id="cta-rubrik">Hittade du inte svaret?</h2>
+          <p>Ring oss eller skriv ett mejl med kortfattad information om ditt ärende samt dina och motpartens personuppgifter, så återkommer vi inom en arbetsdag.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="tel:+4646200151">Ring 046‑20 01 51</a>
+          <a class="btn btn-ghost" href="mailto:info@mgadvokater.se">Mejla oss</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site" id="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Moll &amp; Grosskopf Advokater AB</h4>
+        <p style="font-size:.9rem;max-width:44ch">Auktoriserad advokatbyrå, medlem i Sveriges Advokatsamfund. Grundad 2015 av advokat Maria Grosskopf och advokat Cecilia Moll. Sju advokater och jurister i Lund och Malmö.</p>
+      </div>
+      <div>
+        <h4>Byrån</h4>
+        <ul>
+          <li><a href="https://www.mgadvokater.se/#omraden">Verksamhetsområden</a></li>
+          <li><a href="https://www.mgadvokater.se/#medarbetare">Medarbetare</a></li>
+          <li><a href="https://www.mgadvokater.se/kostnad/">Kostnad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+4646200151">046‑20 01 51</a></li>
+          <li><a href="mailto:info@mgadvokater.se">info@mgadvokater.se</a></li>
+          <li>Lilla Fiskaregatan 23, Lund</li>
+          <li>Södergatan 19, Malmö</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine">
+      <span>© 2026 Moll &amp; Grosskopf Advokater. Alla rättigheter förbehållna.</span>
+      <span>Sidan är optimerad för sökmotorer och AI‑assistenter.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var allDetails = Array.prototype.slice.call(document.querySelectorAll('#faqRoot details'));
+  var cats = Array.prototype.slice.call(document.querySelectorAll('.faq-cat'));
+  var input = document.getElementById('faqSearch');
+  var count = document.getElementById('searchCount');
+  var toggleBtn = document.getElementById('toggleAll');
+  var TOTAL = allDetails.length;
+
+  /* ---- sök/filter: matchar fråga + svar, öppnar träffar ---- */
+  function normalize(s){ return s.toLowerCase(); }
+  allDetails.forEach(function(d){
+    d.dataset.text = normalize(d.textContent);
+  });
+
+  function filter(){
+    var q = normalize(input.value.trim());
+    var visible = 0;
+    allDetails.forEach(function(d){
+      var hit = !q || d.dataset.text.indexOf(q) !== -1;
+      d.hidden = !hit;
+      if (hit){ visible++; if (q) d.open = true; }
+    });
+    cats.forEach(function(c){
+      var any = c.querySelector('details:not([hidden])');
+      c.hidden = !any;
+    });
+    if (!q){
+      allDetails.forEach(function(d){ d.open = false; });
+      count.textContent = TOTAL + " frågor i " + cats.length + " kategorier";
+    } else {
+      count.textContent = visible === 0
+        ? "Inga frågor matchar \u201d" + input.value.trim() + "\u201d – prova ett annat ord eller ring oss."
+        : visible + (visible === 1 ? " fråga matchar" : " frågor matchar");
+    }
+    syncToggleLabel();
+  }
+  input.addEventListener('input', filter);
+
+  /* ---- visa/dölj alla ---- */
+  function anyClosedVisible(){
+    return allDetails.some(function(d){ return !d.hidden && !d.open; });
+  }
+  function syncToggleLabel(){
+    toggleBtn.textContent = anyClosedVisible() ? "Visa alla svar" : "Dölj alla svar";
+  }
+  toggleBtn.addEventListener('click', function(){
+    var openAll = anyClosedVisible();
+    allDetails.forEach(function(d){ if (!d.hidden) d.open = openAll; });
+    syncToggleLabel();
+  });
+  document.getElementById('faqRoot').addEventListener('toggle', syncToggleLabel, true);
+
+  /* ---- öppna fråga vid djuplänk (#q-…) ---- */
+  function openFromHash(){
+    var id = location.hash.replace('#','');
+    if (!id) return;
+    var el = document.getElementById(id);
+    if (el && el.tagName === 'DETAILS'){
+      el.open = true;
+      el.scrollIntoView({ block: 'start' });
+    }
+  }
+  window.addEventListener('hashchange', openFromHash);
+  openFromHash();
+
+  /* ---- öppna allt vid utskrift, återställ efteråt ---- */
+  var printState = null;
+  window.addEventListener('beforeprint', function(){
+    printState = allDetails.map(function(d){ return d.open; });
+    allDetails.forEach(function(d){ d.open = true; });
+  });
+  window.addEventListener('afterprint', function(){
+    if (printState) allDetails.forEach(function(d,i){ d.open = printState[i]; });
+    printState = null;
+  });
+
+  syncToggleLabel();
+})();
+</script>
+</body>
+</html>

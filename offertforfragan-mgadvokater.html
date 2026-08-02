@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============================================================
+     OFFERTFÖRFRÅGAN · Moll & Grosskopf Advokater AB
+     Byggd för dubbel läsbarhet: sökmotorer (SEO) och AI-assistenter (AEO/GEO).
+
+     ATT GÖRA VID PUBLICERING:
+     1. Uppdatera canonical + hreflang om URL:en blir en annan än /offertforfragan/.
+     2. Skapa motsvarande engelsk sida och peka hreflang="en" dit.
+     3. Lägg till sidan i sitemap.xml.
+     4. Rekommenderat: publicera /llms.txt och tillåt AI-crawlers i robots.txt
+        (GPTBot, ClaudeBot, Claude-User, PerplexityBot, Google-Extended).
+     5. Oktober 2026: Lundakontoret flyttar till Mårtenstorget 10 A —
+        uppdatera adressen i BÅDE brödtext och JSON-LD nedan.
+     6. Rättshjälpstaxan ändras årligen — uppdatera 2 033 / 1 859 kr och årtal.
+     7. Formuläret skapar i dag ett strukturerat e-postmeddelande (mailto) till
+        info@mgadvokater.se. Vill ni senare ta emot via server: byt ut
+        composeBody()-anropet i skicka-knappen mot en POST till er endpoint.
+     ============================================================ -->
+
+<title>Offertförfrågan – begär kostnadsförslag | Moll &amp; Grosskopf Advokater, Lund &amp; Malmö</title>
+<meta name="description" content="Begär kostnadsförslag för juridiskt biträde i brottmål, familjerätt, arvsrätt, LVU/LVM/LPT och tvister. Fast timkostnad 2 033 kr (2026). Svar inom en arbetsdag.">
+<link rel="canonical" href="https://www.mgadvokater.se/offertforfragan/">
+<link rel="alternate" hreflang="sv" href="https://www.mgadvokater.se/offertforfragan/">
+<link rel="alternate" hreflang="en" href="https://www.mgadvokater.se/en/request-a-quote/">
+<link rel="alternate" hreflang="x-default" href="https://www.mgadvokater.se/offertforfragan/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#24483A">
+
+<!-- Open Graph / delning -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:site_name" content="Moll &amp; Grosskopf Advokater AB">
+<meta property="og:title" content="Offertförfrågan – begär kostnadsförslag | MG Advokater">
+<meta property="og:description" content="Beskriv ditt ärende, vi gör jävskontroll och återkommer inom en arbetsdag. Fast timkostnad enligt rättshjälpstaxan: 2 033 kr/timme (2026).">
+<meta property="og:url" content="https://www.mgadvokater.se/offertforfragan/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Offertförfrågan | Moll &amp; Grosskopf Advokater">
+<meta name="twitter:description" content="Begär kostnadsförslag för juridiskt biträde i Lund &amp; Malmö. Svar inom en arbetsdag.">
+
+<!-- Typsnitt: en display-serif laddas, brödtext på systemstack för prestanda -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     STRUKTURERAD DATA (schema.org) — primär källa för AI-assistenter
+     och sökmotorernas kunskapsgrafer. Håll i synk med brödtexten.
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LegalService", "LocalBusiness"],
+      "@id": "https://www.mgadvokater.se/#organization",
+      "name": "Moll & Grosskopf Advokater AB",
+      "alternateName": "MG Advokater",
+      "url": "https://www.mgadvokater.se/",
+      "logo": "https://www.mgadvokater.se/wp-content/uploads/2020/12/logo-black0.png",
+      "slogan": "Juridisk omsorg när det betyder mest.",
+      "description": "Advokatbyrå i Lund och Malmö grundad 2015. Sju advokater och jurister inom brottmål, familjerätt, arvsrätt, tvångsomhändertagande (LVU, LVM, LPT) och övriga tvister.",
+      "foundingDate": "2015-08",
+      "founder": [
+        { "@type": "Person", "name": "Maria Grosskopf", "jobTitle": "Advokat, delägare" },
+        { "@type": "Person", "name": "Cecilia Moll", "jobTitle": "Advokat, delägare" }
+      ],
+      "numberOfEmployees": { "@type": "QuantitativeValue", "value": 8 },
+      "memberOf": { "@type": "Organization", "name": "Sveriges Advokatsamfund" },
+      "telephone": "+4646200151",
+      "email": "info@mgadvokater.se",
+      "knowsLanguage": ["sv", "en", "fa", "fi", "es"],
+      "areaServed": [
+        { "@type": "City", "name": "Lund" },
+        { "@type": "City", "name": "Malmö" },
+        { "@type": "AdministrativeArea", "name": "Skåne" }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Lilla Fiskaregatan 23",
+        "postalCode": "222 22",
+        "addressLocality": "Lund",
+        "addressCountry": "SE"
+      },
+      "department": {
+        "@type": "LegalService",
+        "name": "Moll & Grosskopf Advokater – Malmökontoret",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Södergatan 19",
+          "postalCode": "211 34",
+          "addressLocality": "Malmö",
+          "addressCountry": "SE"
+        },
+        "telephone": "+4646200151"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+4646200151",
+        "email": "info@mgadvokater.se",
+        "availableLanguage": ["Swedish", "English", "Persian", "Finnish", "Spanish"]
+      },
+      "priceRange": "2 033 kr per timme (rättshjälpstaxan 2026)",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Juridiska tjänster",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Brottmål", "description": "Offentlig och privat försvarare samt målsägandebiträde genom hela rättskedjan." },
+            "priceSpecification": { "@type": "UnitPriceSpecification", "price": "2033", "priceCurrency": "SEK", "unitText": "per timme (rättshjälpstaxan 2026)" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Familjerätt", "description": "Vårdnad, boende, umgänge, underhåll och bodelning vid skilsmässa eller separation." },
+            "priceSpecification": { "@type": "UnitPriceSpecification", "price": "2033", "priceCurrency": "SEK", "unitText": "per timme (rättshjälpstaxan 2026)" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Tvångsomhändertagande (LVU, LVM, LPT/LRV)", "description": "Offentligt biträde i förvaltningsrätt och kammarrätt. Arvodet betalas av staten." },
+            "priceSpecification": { "@type": "PriceSpecification", "price": "0", "priceCurrency": "SEK", "description": "Kostnadsfritt för den enskilde – staten betalar biträdets arvode." }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Arvsrätt", "description": "Testamente, bouppteckning, arvskifte, boutredningsman, skiftesman och arvstvister." },
+            "priceSpecification": { "@type": "UnitPriceSpecification", "price": "2033", "priceCurrency": "SEK", "unitText": "per timme (rättshjälpstaxan 2026)" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Upprättande av handlingar", "description": "Testamente, äktenskapsförord eller samboavtal inklusive föregående konsultation." },
+            "priceSpecification": { "@type": "PriceSpecification", "minPrice": "4000", "priceCurrency": "SEK", "description": "Från cirka 4 000 kr inkl. moms, timdebitering." }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Övriga tvister", "description": "Avtalstolkning, fordringar, skadestånd och andra civilrättsliga tvister." },
+            "priceSpecification": { "@type": "UnitPriceSpecification", "price": "2033", "priceCurrency": "SEK", "unitText": "per timme (rättshjälpstaxan 2026)" }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "ContactPage",
+      "@id": "https://www.mgadvokater.se/offertforfragan/#webpage",
+      "url": "https://www.mgadvokater.se/offertforfragan/",
+      "name": "Offertförfrågan – begär kostnadsförslag",
+      "inLanguage": "sv-SE",
+      "isPartOf": { "@id": "https://www.mgadvokater.se/#organization" },
+      "about": { "@id": "https://www.mgadvokater.se/#organization" },
+      "description": "Strukturerad förfrågningssida för kostnadsförslag på juridiskt biträde. Läsbar för både människor och AI-assistenter."
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://www.mgadvokater.se/offertforfragan/#process",
+      "name": "Så begär du kostnadsförslag hos Moll & Grosskopf Advokater",
+      "totalTime": "P1D",
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Beskriv ärendet", "text": "Fyll i formuläret eller mejla info@mgadvokater.se med kortfattad information om ärendet samt namn på dig och motparten." },
+        { "@type": "HowToStep", "position": 2, "name": "Jävskontroll", "text": "Byrån kontrollerar att ingen intressekonflikt föreligger, vilket kräver motpartens namn." },
+        { "@type": "HowToStep", "position": 3, "name": "Svar inom en arbetsdag", "text": "Ni får besked om och hur byrån kan hjälpa er, samt hur ärendet kan finansieras via rättsskydd, rättshjälp eller offentligt förordnande." }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.mgadvokater.se/offertforfragan/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Vad kostar det att anlita Moll & Grosskopf Advokater?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Timkostnaden är densamma oavsett vilken jurist eller advokat du anlitar: 2 033 kr per timme (2026), enligt rättshjälpstaxan som Domstolsverket beslutar om. Vid resor och väntetid, så kallad tidsspillan, tillkommer 1 859 kr per timme. Upprättande av handlingar som testamente, äktenskapsförord eller samboavtal kostar vanligen från cirka 4 000 kr inklusive moms." }
+        },
+        {
+          "@type": "Question",
+          "name": "Hur snabbt får jag svar på min förfrågan?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Byrån återkommer inom en arbetsdag med besked om och hur de kan hjälpa dig vidare i ditt ärende. Telefontid är måndag till fredag 08.00–17.00 på 046-20 01 51." }
+        },
+        {
+          "@type": "Question",
+          "name": "Varför behöver ni uppgifter om motparten?",
+          "acceptedAnswer": { "@type": "Answer", "text": "En advokat får inte företräda en klient om det finns en intressekonflikt, till exempel om byrån redan företräder motparten. Därför görs en jävskontroll innan ett uppdrag antas. För den räcker det inledningsvis med motpartens namn och ort – personnummer behövs inte i den första kontakten." }
+        },
+        {
+          "@type": "Question",
+          "name": "Vad är rättsskydd och hur ansöker jag?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Rättsskydd ingår i de flesta hemförsäkringar och täcker en stor del av ombudskostnaden i många tvister. Det söks alltid i första hand och byrån hjälper dig med ansökan. För en komplett ansökan behöver du veta vilket försäkringsbolag du har, hur länge du varit försäkrad där och om du bytt bolag de senaste två åren." }
+        },
+        {
+          "@type": "Question",
+          "name": "Vad är rättshjälp och vem kan få det?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Rättshjälp är statligt stöd när försäkring saknas eller inte kan användas. Ansökan fylls i gemensamt vid första mötet. Din egenavgift är mellan 2 och 40 procent av kostnaden beroende på din inkomst. Det finns ett inkomsttak som gör att höginkomsttagare utan stora skulder eller omfattande underhållsskyldighet mot barn inte kan beviljas rättshjälp." }
+        },
+        {
+          "@type": "Question",
+          "name": "Vad kostar en offentlig försvarare eller ett målsägandebiträde?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Arvodet till målsägandebiträde och till offentligt biträde enligt LVU, LVM och LPT betalas alltid av staten. För offentlig försvarare uppstår återbetalningsskyldighet endast om du döms för brott, och då i en omfattning som beror på din inkomst. Frias du står staten för hela kostnaden." }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan jag få hjälp på andra språk än svenska?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ja. Utöver svenska och engelska finns medarbetare som talar persiska, finska och spanska." }
+        },
+        {
+          "@type": "Question",
+          "name": "Var kan vi träffas?",
+          "acceptedAnswer": { "@type": "Answer", "text": "På huvudkontoret i Lund, Lilla Fiskaregatan 23 (från oktober 2026: Mårtenstorget 10 A), eller på filialkontoret i Malmö, Södergatan 19. Möte per telefon eller video går också bra. Öppettider måndag–fredag 08.00–17.00." }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.mgadvokater.se/offertforfragan/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Hem", "item": "https://www.mgadvokater.se/" },
+        { "@type": "ListItem", "position": 2, "name": "Offertförfrågan", "item": "https://www.mgadvokater.se/offertforfragan/" }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --ink:#20241F;
+    --ink-soft:#4A5049;
+    --paper:#F1F1EA;
+    --card:#FBFBF6;
+    --pine:#24483A;
+    --pine-deep:#16302A;
+    --pine-tint:#E3EAE4;
+    --brass:#96792F;
+    --rule:#D8DACD;
+    --machine-bg:#14201B;
+    --machine-ink:#CFE3D7;
+    --machine-dim:#7FA192;
+    --err:#8C3B2E;
+    --serif:'Libre Caslon Text', Georgia, 'Times New Roman', serif;
+    --sans:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --mono:ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, 'Liberation Mono', monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.65;
+    font-size:1rem;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  a{color:var(--pine);text-underline-offset:3px}
+  a:hover{color:var(--pine-deep)}
+  :focus-visible{outline:2px solid var(--brass);outline-offset:2px;border-radius:2px}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:10px 16px;z-index:99}
+  .skip:focus{left:16px;top:16px}
+
+  /* ---------- header ---------- */
+  header.site{
+    border-bottom:1px solid var(--rule);
+    background:var(--paper);
+  }
+  .site-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;flex-wrap:wrap}
+  .brand{font-family:var(--serif);font-size:1.1rem;color:var(--ink);text-decoration:none;letter-spacing:.01em}
+  .brand strong{font-weight:700}
+  nav.top ul{display:flex;gap:22px;list-style:none;align-items:center;flex-wrap:wrap}
+  nav.top a{font-size:.9rem;text-decoration:none;color:var(--ink-soft)}
+  nav.top a:hover{color:var(--pine-deep)}
+  .tel-pill{
+    border:1px solid var(--pine);border-radius:999px;padding:6px 14px;
+    color:var(--pine) !important;font-weight:600;white-space:nowrap
+  }
+
+  /* ---------- eyebrows & headings ---------- */
+  .eyebrow{
+    font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--brass);margin-bottom:14px;display:flex;align-items:center;gap:12px
+  }
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--brass);flex:none}
+  h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.15;color:var(--ink)}
+  h1{font-size:clamp(2rem,4.6vw,3.2rem);letter-spacing:-.01em}
+  h1 em{font-style:italic;font-weight:400;color:var(--pine)}
+  h2{font-size:clamp(1.45rem,2.6vw,2rem);margin-bottom:14px}
+  h3{font-size:1.12rem}
+  .lede{font-size:1.08rem;color:var(--ink-soft);max-width:56ch;margin-top:18px}
+
+  section{padding:64px 0}
+  @media(min-width:760px){section{padding:84px 0}}
+
+  /* ---------- hero ---------- */
+  .hero{padding:64px 0 56px;border-bottom:1px solid var(--rule)}
+  .hero-grid{display:grid;gap:40px}
+  @media(min-width:900px){.hero-grid{grid-template-columns:1.25fr .85fr;align-items:start}}
+  .hero-cta{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    display:inline-block;font-weight:600;font-size:.95rem;text-decoration:none;
+    padding:13px 26px;border-radius:3px;border:1px solid transparent;cursor:pointer;
+    transition:background .15s ease,color .15s ease,border-color .15s ease
+  }
+  .btn-primary{background:var(--pine);color:#fff}
+  .btn-primary:hover{background:var(--pine-deep);color:#fff}
+  .btn-ghost{border-color:var(--pine);color:var(--pine);background:transparent}
+  .btn-ghost:hover{background:var(--pine-tint);color:var(--pine-deep)}
+
+  /* Snabbfakta — definitionslista, lätt att extrahera för AI */
+  .facts{
+    background:var(--card);border:1px solid var(--rule);border-radius:6px;
+    padding:26px 28px;box-shadow:0 1px 0 rgba(32,36,31,.04)
+  }
+  .facts h2{font-size:1rem;font-family:var(--sans);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:16px}
+  .facts dl{display:grid;grid-template-columns:1fr;gap:0}
+  .facts .row{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .facts .row:last-child{border-bottom:0}
+  .facts dt{color:var(--ink-soft);font-size:.9rem}
+  .facts dd{font-weight:600;text-align:right;font-size:.93rem;font-variant-numeric:tabular-nums}
+
+  /* ---------- steg ---------- */
+  .steps{display:grid;gap:22px;margin-top:34px}
+  @media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{
+    background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:24px;
+    position:relative
+  }
+  .step .num{
+    font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--brass);
+    display:block;margin-bottom:10px
+  }
+  .step p{font-size:.95rem;color:var(--ink-soft);margin-top:6px}
+
+  /* ---------- formulär + förhandsvisning ---------- */
+  .rfq-grid{display:grid;gap:34px;margin-top:36px}
+  @media(min-width:980px){.rfq-grid{grid-template-columns:1.02fr .98fr;align-items:start}}
+  form.rfq{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:8px 0}
+  fieldset{border:0;padding:26px 28px;border-bottom:1px solid var(--rule)}
+  fieldset:last-of-type{border-bottom:0}
+  legend{
+    font-family:var(--serif);font-size:1.06rem;font-weight:700;padding:0;
+    display:flex;align-items:baseline;gap:10px;float:left;width:100%;margin-bottom:6px
+  }
+  legend .sec{
+    font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.12em;
+    color:#fff;background:var(--pine);border-radius:2px;padding:2px 7px;flex:none
+  }
+  fieldset > .hint{clear:both;font-size:.86rem;color:var(--ink-soft);margin-bottom:16px}
+  .field{margin-bottom:16px;clear:both}
+  .field:last-child{margin-bottom:0}
+  label{display:block;font-size:.88rem;font-weight:600;margin-bottom:6px}
+  label .opt{font-weight:400;color:var(--ink-soft)}
+  input[type=text],input[type=email],input[type=tel],select,textarea{
+    width:100%;padding:11px 13px;border:1px solid #BFC2B4;border-radius:3px;
+    background:#fff;color:var(--ink);font:inherit;font-size:.95rem
+  }
+  input:focus,select:focus,textarea:focus{border-color:var(--pine);outline:2px solid var(--pine-tint);outline-offset:0}
+  textarea{min-height:120px;resize:vertical}
+  .two-col{display:grid;gap:16px}
+  @media(min-width:640px){.two-col{grid-template-columns:1fr 1fr}}
+  .radios{display:grid;gap:9px}
+  .radios label{display:flex;gap:10px;align-items:flex-start;font-weight:500;font-size:.92rem;cursor:pointer;margin:0}
+  .radios input{margin-top:3px;accent-color:var(--pine)}
+  .sub-fields{
+    margin-top:14px;padding:16px;border-left:3px solid var(--pine);
+    background:var(--pine-tint);border-radius:0 4px 4px 0
+  }
+  .sub-fields[hidden]{display:none}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;font-weight:400}
+  .consent input{margin-top:4px;accent-color:var(--pine);flex:none}
+  .form-actions{padding:24px 28px 28px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  .form-note{font-size:.82rem;color:var(--ink-soft);width:100%;margin-top:4px}
+  .field-err{border-color:var(--err) !important}
+  #formMsg{font-size:.88rem;font-weight:600;width:100%}
+  #formMsg.err{color:var(--err)}
+  #formMsg.ok{color:var(--pine)}
+
+  /* Signatur: den levande handlingen */
+  .handling{position:sticky;top:24px}
+  .handling-card{
+    background:var(--machine-bg);color:var(--machine-ink);border-radius:6px;
+    padding:0;overflow:hidden;border:1px solid var(--pine-deep)
+  }
+  .handling-head{
+    display:flex;justify-content:space-between;align-items:center;gap:12px;
+    padding:16px 20px;border-bottom:1px solid rgba(207,227,215,.18)
+  }
+  .handling-head strong{font-family:var(--serif);font-size:1rem;color:#fff;font-weight:700}
+  .stamp{
+    font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+    border:1px solid var(--machine-dim);color:var(--machine-dim);
+    border-radius:2px;padding:3px 8px;transform:rotate(-1.5deg);white-space:nowrap
+  }
+  pre#preview{
+    font-family:var(--mono);font-size:.8rem;line-height:1.7;
+    padding:20px;white-space:pre-wrap;word-break:break-word;max-height:560px;overflow:auto
+  }
+  .handling-foot{padding:12px 20px 16px;font-size:.78rem;color:var(--machine-dim);border-top:1px solid rgba(207,227,215,.18)}
+
+  /* ---------- kostnad ---------- */
+  .cost-strip{
+    background:var(--card);border:1px solid var(--rule);border-radius:6px;
+    padding:22px 26px;margin-top:30px;display:flex;flex-wrap:wrap;gap:28px;align-items:baseline
+  }
+  .cost-strip .big{font-family:var(--serif);font-size:1.9rem;font-weight:700;font-variant-numeric:tabular-nums}
+  .cost-strip .lbl{font-size:.82rem;color:var(--ink-soft);display:block}
+  .fund-grid{display:grid;gap:20px;margin-top:26px}
+  @media(min-width:760px){.fund-grid{grid-template-columns:repeat(2,1fr)}}
+  .fund{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:24px}
+  .fund h3{margin-bottom:8px}
+  .fund p{font-size:.93rem;color:var(--ink-soft)}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:780px;margin-top:26px}
+  details{border-bottom:1px solid var(--rule)}
+  details summary{
+    cursor:pointer;list-style:none;padding:18px 34px 18px 0;position:relative;
+    font-weight:600;font-size:1rem
+  }
+  details summary::-webkit-details-marker{display:none}
+  details summary::after{
+    content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);
+    font-family:var(--serif);font-size:1.3rem;color:var(--brass)
+  }
+  details[open] summary::after{content:"−"}
+  details .answer{padding:0 0 20px;color:var(--ink-soft);font-size:.95rem;max-width:68ch}
+
+  /* ---------- AI-sektion ---------- */
+  .ai{background:var(--machine-bg);color:var(--machine-ink)}
+  .ai h2,.ai h3{color:#fff}
+  .ai .eyebrow{color:var(--machine-dim)}
+  .ai .eyebrow::before{background:var(--machine-dim)}
+  .ai p{color:var(--machine-ink)}
+  .ai a{color:#B9D9C7}
+  .ai-grid{display:grid;gap:32px;margin-top:28px}
+  @media(min-width:900px){.ai-grid{grid-template-columns:1fr 1fr}}
+  .ai table{width:100%;border-collapse:collapse;font-size:.85rem;margin-top:14px}
+  .ai th,.ai td{text-align:left;padding:9px 10px;border-bottom:1px solid rgba(207,227,215,.18);vertical-align:top}
+  .ai th{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--machine-dim);font-weight:700}
+  .ai code, .ai pre{font-family:var(--mono)}
+  .ai pre{
+    background:rgba(0,0,0,.35);border:1px solid rgba(207,227,215,.18);border-radius:5px;
+    padding:18px;font-size:.78rem;line-height:1.7;white-space:pre-wrap;word-break:break-word
+  }
+  .ai .req{color:#E8C87A;font-weight:700}
+
+  /* ---------- kontor ---------- */
+  .offices{display:grid;gap:20px;margin-top:26px}
+  @media(min-width:760px){.offices{grid-template-columns:1fr 1fr}}
+  .office{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:26px}
+  .office .tag{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);font-weight:700}
+  .office h3{margin:6px 0 10px}
+  .office p{font-size:.94rem;color:var(--ink-soft)}
+  .office .move{
+    margin-top:12px;font-size:.84rem;background:var(--pine-tint);
+    border-left:3px solid var(--pine);padding:9px 12px;border-radius:0 4px 4px 0;color:var(--ink)
+  }
+
+  /* ---------- footer ---------- */
+  footer.site{
+    background:var(--ink);color:#C9CCC3;padding:52px 0 40px;margin-top:20px
+  }
+  footer .cols{display:grid;gap:30px}
+  @media(min-width:760px){footer .cols{grid-template-columns:2fr 1fr 1fr}}
+  footer h4{font-family:var(--serif);color:#fff;font-size:1rem;margin-bottom:10px}
+  footer a{color:#C9CCC3}
+  footer a:hover{color:#fff}
+  footer ul{list-style:none}
+  footer li{margin-bottom:6px;font-size:.9rem}
+  footer .fine{margin-top:36px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);font-size:.8rem;color:#8E938A;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition:none !important;animation:none !important}
+  }
+  @media print{
+    header.site,.hero-cta,.form-actions,.ai,footer.site{display:none}
+    body{background:#fff}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#huvudinnehall">Hoppa till innehåll</a>
+
+<header class="site">
+  <div class="wrap site-inner">
+    <a class="brand" href="https://www.mgadvokater.se/"><strong>Moll &amp; Grosskopf</strong> Advokater</a>
+    <nav class="top" aria-label="Huvudnavigation">
+      <ul>
+        <li><a href="https://www.mgadvokater.se/#omraden">Verksamhetsområden</a></li>
+        <li><a href="https://www.mgadvokater.se/kostnad/">Kostnad</a></li>
+        <li><a href="#kontor">Kontakt</a></li>
+        <li><a class="tel-pill" href="tel:+4646200151">046‑20&nbsp;01&nbsp;51</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="huvudinnehall">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-labelledby="rubrik">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Offertförfrågan · Lund &amp; Malmö</p>
+        <h1 id="rubrik">Begär <em>kostnadsförslag</em> för juridiskt biträde</h1>
+        <p class="lede">Beskriv ditt ärende kortfattat, så gör vi en jävskontroll och återkommer <strong>inom en arbetsdag</strong> med besked om hur vi kan hjälpa dig – och hur ärendet kan finansieras. Vår timkostnad är alltid densamma oavsett vem av oss du anlitar: 2&nbsp;033&nbsp;kr per timme (2026) enligt rättshjälpstaxan.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#forfragan">Skicka förfrågan</a>
+          <a class="btn btn-ghost" href="tel:+4646200151">Ring 046‑20 01 51</a>
+        </div>
+      </div>
+
+      <aside class="facts" aria-labelledby="snabbfakta">
+        <h2 id="snabbfakta">Snabbfakta</h2>
+        <dl>
+          <div class="row"><dt>Timkostnad (2026)</dt><dd>2 033 kr/tim</dd></div>
+          <div class="row"><dt>Tidsspillan (resor, väntetid)</dt><dd>1 859 kr/tim</dd></div>
+          <div class="row"><dt>Svar på förfrågan</dt><dd>Inom en arbetsdag</dd></div>
+          <div class="row"><dt>Kontor</dt><dd>Lund &amp; Malmö</dd></div>
+          <div class="row"><dt>Advokater &amp; jurister</dt><dd>7</dd></div>
+          <div class="row"><dt>Språk</dt><dd>Svenska, engelska, persiska, finska, spanska</dd></div>
+          <div class="row"><dt>Grundad</dt><dd>2015</dd></div>
+          <div class="row"><dt>Medlemskap</dt><dd>Sveriges Advokatsamfund</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section aria-labelledby="process-rubrik">
+    <div class="wrap">
+      <p class="eyebrow">Så går det till</p>
+      <h2 id="process-rubrik">Tre steg till besked</h2>
+      <div class="steps">
+        <article class="step">
+          <span class="num">i.</span>
+          <h3>Beskriv ärendet</h3>
+          <p>Fyll i formuläret nedan eller mejla oss direkt. Ett par meningar räcker – undvik känsliga detaljer i den första kontakten.</p>
+        </article>
+        <article class="step">
+          <span class="num">ii.</span>
+          <h3>Vi gör jävskontroll</h3>
+          <p>Advokater får inte företräda båda sidor i en konflikt. Därför behöver vi motpartens namn innan vi kan anta uppdraget.</p>
+        </article>
+        <article class="step">
+          <span class="num">iii.</span>
+          <h3>Svar inom en arbetsdag</h3>
+          <p>Du får besked om hur vi kan hjälpa dig, vem hos oss som passar ärendet och hur det kan finansieras.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FORMULÄR + LEVANDE HANDLING ============ -->
+  <section id="forfragan" aria-labelledby="forfragan-rubrik" style="padding-top:0">
+    <div class="wrap">
+      <p class="eyebrow">Förfrågan</p>
+      <h2 id="forfragan-rubrik">Din förfrågan, som en färdig handling</h2>
+      <p class="lede" style="margin-top:8px">Medan du fyller i formuläret byggs din förfrågan ihop till höger – exakt det underlag vi behöver för jävskontroll och bedömning. Skicka den som e‑post eller kopiera texten.</p>
+
+      <div class="rfq-grid">
+        <form class="rfq" id="rfqForm" novalidate>
+
+          <fieldset>
+            <legend><span class="sec">A</span> Kontaktuppgifter</legend>
+            <div class="two-col">
+              <div class="field">
+                <label for="f-namn">Namn *</label>
+                <input type="text" id="f-namn" name="namn" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="f-epost">E‑post *</label>
+                <input type="email" id="f-epost" name="epost" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="f-tel">Telefon <span class="opt">(frivilligt)</span></label>
+                <input type="tel" id="f-tel" name="telefon" autocomplete="tel">
+              </div>
+              <div class="field">
+                <label for="f-ort">Ort <span class="opt">(frivilligt)</span></label>
+                <input type="text" id="f-ort" name="ort" autocomplete="address-level2">
+              </div>
+              <div class="field">
+                <label for="f-sprak">Föredraget språk</label>
+                <select id="f-sprak" name="sprak">
+                  <option>Svenska</option>
+                  <option>Engelska</option>
+                  <option>Persiska</option>
+                  <option>Finska</option>
+                  <option>Spanska</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="f-kontor">Önskat kontor / mötesform</label>
+                <select id="f-kontor" name="kontor">
+                  <option>Spelar ingen roll</option>
+                  <option>Lund – Lilla Fiskaregatan 23</option>
+                  <option>Malmö – Södergatan 19</option>
+                  <option>Telefon eller video</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span class="sec">B</span> Ärendet</legend>
+            <p class="hint">Beskriv i stora drag – detaljer tar vi i ett skyddat samtal senare.</p>
+            <div class="field">
+              <label for="f-typ">Typ av ärende *</label>
+              <select id="f-typ" name="arendetyp" required>
+                <option value="" selected disabled>Välj område …</option>
+                <optgroup label="Brottmål">
+                  <option>Brottmål – misstänkt eller tilltalad (försvarare)</option>
+                  <option>Brottmål – brottsoffer (målsägandebiträde)</option>
+                </optgroup>
+                <optgroup label="Familjerätt">
+                  <option>Familjerätt – vårdnad, boende eller umgänge</option>
+                  <option>Familjerätt – bodelning (äktenskap eller samboskap)</option>
+                  <option>Familjerätt – underhållsbidrag</option>
+                </optgroup>
+                <optgroup label="Arvsrätt">
+                  <option>Arvsrätt – bouppteckning, arvskifte eller arvstvist</option>
+                  <option>Upprättande av handling – testamente, äktenskapsförord, samboavtal</option>
+                </optgroup>
+                <optgroup label="Tvångsvård">
+                  <option>Tvångsvård – LVU (barn och unga)</option>
+                  <option>Tvångsvård – LVM (missbruk)</option>
+                  <option>Tvångsvård – LPT/LRV (psykiatri)</option>
+                </optgroup>
+                <optgroup label="Övrigt">
+                  <option>Övrig tvist – avtal, fordran, skadestånd eller fastighet</option>
+                  <option>Annat / osäker</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-beskrivning">Kort beskrivning *</label>
+              <textarea id="f-beskrivning" name="beskrivning" required placeholder="Vad har hänt, vad vill du uppnå, och var i processen befinner du dig?"></textarea>
+            </div>
+            <div class="field">
+              <label for="f-frist">Tidsfrist eller domstolsdatum <span class="opt">(om känt)</span></label>
+              <input type="text" id="f-frist" name="frist" placeholder="T.ex. förhör 12 september, svarsfrist 30 augusti">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span class="sec">C</span> Motpart – för jävskontroll</legend>
+            <p class="hint">Advokatsamfundets regler kräver att vi kontrollerar intressekonflikter innan vi antar ett uppdrag. Namn och ort räcker – personnummer behövs inte i detta skede.</p>
+            <div class="two-col">
+              <div class="field">
+                <label for="f-motpart">Motpartens namn *</label>
+                <input type="text" id="f-motpart" name="motpart" required>
+              </div>
+              <div class="field">
+                <label for="f-motpart-ort">Motpartens ort <span class="opt">(frivilligt)</span></label>
+                <input type="text" id="f-motpart-ort" name="motpartOrt">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span class="sec">D</span> Finansiering</legend>
+            <p class="hint">Vi hjälper dig att söka rättsskydd eller rättshjälp – kryssa i det du tror gäller, eller välj ”vet ej”.</p>
+            <div class="radios" role="radiogroup" aria-label="Finansiering">
+              <label><input type="radio" name="finansiering" value="Hemförsäkring (rättsskydd)"> Hemförsäkring – rättsskydd</label>
+              <label><input type="radio" name="finansiering" value="Rättshjälp (statlig)"> Rättshjälp från staten</label>
+              <label><input type="radio" name="finansiering" value="Offentligt uppdrag (staten betalar)"> Offentligt uppdrag – försvarare, målsägandebiträde eller LVU/LVM/LPT</label>
+              <label><input type="radio" name="finansiering" value="Privat betalning"> Jag betalar själv</label>
+              <label><input type="radio" name="finansiering" value="Vet ej" checked> Vet ej – hjälp mig bedöma</label>
+            </div>
+            <div class="sub-fields" id="insuranceFields" hidden>
+              <div class="two-col">
+                <div class="field">
+                  <label for="f-bolag">Försäkringsbolag</label>
+                  <input type="text" id="f-bolag" name="bolag">
+                </div>
+                <div class="field">
+                  <label for="f-sedan">Försäkrad sedan <span class="opt">(ungefär)</span></label>
+                  <input type="text" id="f-sedan" name="forsakradSedan" placeholder="T.ex. 2019">
+                </div>
+              </div>
+              <div class="field" style="margin-top:12px;margin-bottom:0">
+                <label for="f-byte">Bytt bolag de senaste två åren?</label>
+                <input type="text" id="f-byte" name="bolagsbyte" placeholder="Nej / Ja, från …">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <label class="consent">
+              <input type="checkbox" id="f-samtycke" required>
+              <span>Jag samtycker till att Moll &amp; Grosskopf Advokater behandlar uppgifterna ovan för jävskontroll och för att återkomma till mig. Uppgifterna används inte för något annat ändamål. *</span>
+            </label>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-primary" id="btnMail">Öppna som e‑post</button>
+            <button type="button" class="btn btn-ghost" id="btnCopy">Kopiera förfrågan</button>
+            <p id="formMsg" role="status" aria-live="polite"></p>
+            <p class="form-note">E‑posten skickas till <a href="mailto:info@mgadvokater.se">info@mgadvokater.se</a>. Du kan också ringa <a href="tel:+4646200151">046‑20 01 51</a>, mån–fre 08.00–17.00. Skicka inga känsliga personuppgifter utöver det formuläret frågar efter.</p>
+          </div>
+        </form>
+
+        <aside class="handling" aria-label="Förhandsvisning av din förfrågan">
+          <div class="handling-card">
+            <div class="handling-head">
+              <strong>Din handling</strong>
+              <span class="stamp">Underlag för jävskontroll</span>
+            </div>
+            <pre id="preview" aria-live="polite"></pre>
+            <div class="handling-foot">Uppdateras medan du skriver. Samma struktur kan användas av en AI‑assistent som mejlar för din räkning – se avsnittet för AI‑assistenter nedan.</div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KOSTNAD & FINANSIERING ============ -->
+  <section id="kostnad" aria-labelledby="kostnad-rubrik">
+    <div class="wrap">
+      <p class="eyebrow">Kostnad</p>
+      <h2 id="kostnad-rubrik">Tydligt och förutsägbart</h2>
+      <p class="lede" style="margin-top:8px">Vi tillämpar rättshjälpstaxan som Domstolsverket beslutar om. Ett exakt totalpris på förhand är sällan möjligt – arbetsinsatsen beror på ärendet – men timpriset är alltid detsamma och fakturering sker löpande.</p>
+
+      <div class="cost-strip">
+        <div><span class="big">2 033 kr</span><span class="lbl">per timme (2026), alla jurister och advokater</span></div>
+        <div><span class="big">1 859 kr</span><span class="lbl">per timme för tidsspillan – resor och väntetid</span></div>
+        <div><span class="big">från 4 000 kr</span><span class="lbl">inkl. moms för handlingar, t.ex. testamente, inkl. konsultation</span></div>
+      </div>
+
+      <div class="fund-grid">
+        <article class="fund">
+          <h3>Rättsskydd via hemförsäkringen</h3>
+          <p>Söks alltid i första hand och täcker en stor del av kostnaden i många tvister. Vi hjälper dig med ansökan – ha koll på vilket bolag du har, hur länge du varit försäkrad och om du bytt bolag de senaste två åren.</p>
+        </article>
+        <article class="fund">
+          <h3>Rättshjälp från staten</h3>
+          <p>När försäkring saknas eller inte kan användas. Ansökan fylls i gemensamt vid första mötet. Din egenavgift är 2–40&nbsp;% av kostnaden beroende på inkomst; höginkomsttagare utan stora skulder eller omfattande underhållsskyldighet omfattas inte.</p>
+        </article>
+        <article class="fund">
+          <h3>Offentliga uppdrag</h3>
+          <p>Som målsägandebiträde och som offentligt biträde enligt LVU, LVM och LPT betalas vårt arvode alltid av staten. Som offentlig försvarare blir du återbetalningsskyldig endast om du döms – i en omfattning som beror på din inkomst.</p>
+        </article>
+        <article class="fund">
+          <h3>Privat betalning</h3>
+          <p>Vid avslag på både rättsskydd och rättshjälp bär du kostnaden själv. Vi tar då in ett förskott på arvodet till klientmedelskonto och delfakturerar löpande, så att du hela tiden ser var kostnaden ligger.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" aria-labelledby="faq-rubrik" style="padding-top:0">
+    <div class="wrap">
+      <p class="eyebrow">Vanliga frågor</p>
+      <h2 id="faq-rubrik">Frågor och svar om förfrågan och kostnad</h2>
+
+      <div class="faq-list">
+        <details>
+          <summary>Vad kostar det att anlita er?</summary>
+          <div class="answer"><p>Timkostnaden är densamma oavsett vilken jurist eller advokat du anlitar: 2&nbsp;033 kr per timme (2026), enligt rättshjälpstaxan som Domstolsverket beslutar om. Vid resor och väntetid – så kallad tidsspillan – tillkommer 1&nbsp;859 kr per timme. Handlingar som testamente, äktenskapsförord eller samboavtal kostar vanligen från cirka 4&nbsp;000 kr inklusive moms, inklusive föregående konsultation.</p></div>
+        </details>
+        <details>
+          <summary>Hur snabbt får jag svar på min förfrågan?</summary>
+          <div class="answer"><p>Vi återkommer inom en arbetsdag med besked om och hur vi kan hjälpa dig vidare. Telefontid är måndag–fredag 08.00–17.00 på 046‑20 01 51.</p></div>
+        </details>
+        <details>
+          <summary>Varför behöver ni uppgifter om motparten?</summary>
+          <div class="answer"><p>En advokat får inte företräda en klient om det finns en intressekonflikt – till exempel om byrån redan företräder motparten. Därför gör vi en jävskontroll innan vi antar ett uppdrag. Motpartens namn och ort räcker inledningsvis; personnummer behövs inte i den första kontakten.</p></div>
+        </details>
+        <details>
+          <summary>Vad är rättsskydd och hur ansöker jag?</summary>
+          <div class="answer"><p>Rättsskydd ingår i de flesta hemförsäkringar och söks alltid i första hand. Vi hjälper dig med ansökan. För ett komplett underlag behöver vi veta vilket försäkringsbolag du har, hur länge du varit försäkrad där och om du bytt bolag de senaste två åren.</p></div>
+        </details>
+        <details>
+          <summary>Vad är rättshjälp och vem kan få det?</summary>
+          <div class="answer"><p>Rättshjälp är statligt stöd när försäkring saknas eller inte kan utnyttjas. Ansökan fyller vi i gemensamt vid första mötet. Din egenavgift är mellan 2 och 40 procent av kostnaden beroende på inkomst. Ett inkomsttak gör att höginkomsttagare utan stora skulder eller omfattande underhållsskyldighet mot barn inte kan beviljas rättshjälp.</p></div>
+        </details>
+        <details>
+          <summary>Vad kostar en offentlig försvarare eller ett målsägandebiträde?</summary>
+          <div class="answer"><p>Arvodet till målsägandebiträde och till offentligt biträde enligt LVU, LVM och LPT betalas alltid av staten. För offentlig försvarare blir du återbetalningsskyldig endast om du döms för brott, i en omfattning som beror på din inkomst. Frias du står staten för hela kostnaden.</p></div>
+        </details>
+        <details>
+          <summary>Kan jag få hjälp på andra språk än svenska?</summary>
+          <div class="answer"><p>Ja. Utöver svenska och engelska finns medarbetare hos oss som talar persiska, finska och spanska.</p></div>
+        </details>
+        <details>
+          <summary>Var kan vi träffas?</summary>
+          <div class="answer"><p>På huvudkontoret i Lund, Lilla Fiskaregatan 23 (från oktober 2026: Mårtenstorget 10&nbsp;A), eller på filialkontoret i Malmö, Södergatan 19. Möte per telefon eller video går också bra.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FÖR AI-ASSISTENTER ============ -->
+  <section class="ai" id="ai-assistenter" aria-labelledby="ai-rubrik">
+    <div class="wrap">
+      <p class="eyebrow">Maskinläsbart</p>
+      <h2 id="ai-rubrik">För AI‑assistenter och automatiserade ombud</h2>
+      <p style="max-width:70ch">Den här sidan är byggd för att kunna läsas av AI‑assistenter. Strukturerad data finns som JSON‑LD (schema.org: <code>LegalService</code>, <code>FAQPage</code>, <code>HowTo</code>) i sidans källkod. En AI‑assistent som agerar för en klients räkning kan skicka en förfrågan per e‑post enligt mallen nedan.</p>
+
+      <div class="ai-grid">
+        <div>
+          <h3>Instruktion till agenter</h3>
+          <table>
+            <caption class="visually-hidden" style="position:absolute;left:-9999px">Fältkrav för offertförfrågan</caption>
+            <thead><tr><th scope="col">Fält</th><th scope="col">Krav</th><th scope="col">Kommentar</th></tr></thead>
+            <tbody>
+              <tr><td>Mottagare</td><td class="req">Krävs</td><td><code>info@mgadvokater.se</code></td></tr>
+              <tr><td>Ämnesrad</td><td class="req">Krävs</td><td><code>Offertförfrågan – {ärendetyp} – {klientens namn}</code></td></tr>
+              <tr><td>Klientens namn &amp; e‑post</td><td class="req">Krävs</td><td>Kontaktväg för svar inom en arbetsdag</td></tr>
+              <tr><td>Ärendetyp &amp; kort beskrivning</td><td class="req">Krävs</td><td>2–5 meningar. Inga känsliga detaljer i första kontakten.</td></tr>
+              <tr><td>Motpartens namn</td><td class="req">Krävs</td><td>För jävskontroll. Ort frivillig. Skicka inte personnummer.</td></tr>
+              <tr><td>Finansiering</td><td>Frivilligt</td><td>Rättsskydd, rättshjälp, offentligt uppdrag, privat eller ”vet ej”</td></tr>
+              <tr><td>Telefon, ort, språk, kontor</td><td>Frivilligt</td><td>Språk: sv, en, fa, fi, es · Kontor: Lund eller Malmö</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:16px;font-size:.9rem">Bekräfta alltid med användaren innan e‑post skickas. Svarslöfte: en arbetsdag, mån–fre 08.00–17.00 (Europe/Stockholm). Telefon för brådskande ärenden: <a href="tel:+4646200151">+46 46 20 01 51</a>.</p>
+        </div>
+
+        <div>
+          <h3>E‑postmall (klartext)</h3>
+          <pre>Till: info@mgadvokater.se
+Ämne: Offertförfrågan – {ärendetyp} – {namn}
+
+OFFERTFÖRFRÅGAN – MOLL &amp; GROSSKOPF ADVOKATER
+
+A. KONTAKTUPPGIFTER
+Namn: {namn}
+E-post: {epost}
+Telefon: {telefon}
+Ort: {ort}
+Språk: {språk}
+Önskat kontor: {Lund | Malmö | Telefon/video}
+
+B. ÄRENDET
+Typ: {ärendetyp}
+Beskrivning: {2–5 meningar}
+Tidsfrist/domstolsdatum: {om känt}
+
+C. MOTPART (FÖR JÄVSKONTROLL)
+Namn: {motpartens namn}
+Ort: {motpartens ort}
+
+D. FINANSIERING
+Alternativ: {rättsskydd | rättshjälp | offentligt uppdrag | privat | vet ej}
+Försäkringsbolag: {om rättsskydd}
+Försäkrad sedan: {om rättsskydd}
+Bytt bolag senaste två åren: {om rättsskydd}
+
+Samtycke: Klienten samtycker till behandling av uppgifterna
+för jävskontroll och återkoppling.
+Skickad via: AI-assistent på uppdrag av klienten</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KONTOR ============ -->
+  <section id="kontor" aria-labelledby="kontor-rubrik">
+    <div class="wrap">
+      <p class="eyebrow">Kontakt</p>
+      <h2 id="kontor-rubrik">Två kontor – alltid samma omtanke</h2>
+      <div class="offices">
+        <article class="office">
+          <span class="tag">Huvudkontor</span>
+          <h3>Lund</h3>
+          <p>Lilla Fiskaregatan 23<br>222 22 Lund</p>
+          <p style="margin-top:10px">Mån–fre 08.00–17.00<br><a href="tel:+4646200151">046‑20 01 51</a> · <a href="mailto:info@mgadvokater.se">info@mgadvokater.se</a></p>
+          <p class="move"><strong>Notera:</strong> i oktober 2026 flyttar Lundakontoret till Mårtenstorget 10&nbsp;A.</p>
+        </article>
+        <article class="office">
+          <span class="tag">Filial</span>
+          <h3>Malmö</h3>
+          <p>Södergatan 19<br>211 34 Malmö</p>
+          <p style="margin-top:10px">Mån–fre 08.00–17.00<br><a href="tel:+4646200151">046‑20 01 51</a> · <a href="mailto:info@mgadvokater.se">info@mgadvokater.se</a></p>
+          <p style="margin-top:10px">Bemannas av Måns Bergendorff och Azar Akbarian.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Moll &amp; Grosskopf Advokater AB</h4>
+        <p style="font-size:.9rem;max-width:44ch">Auktoriserad advokatbyrå, medlem i Sveriges Advokatsamfund. Grundad 2015 av advokat Maria Grosskopf och advokat Cecilia Moll. Sju advokater och jurister i Lund och Malmö.</p>
+      </div>
+      <div>
+        <h4>Byrån</h4>
+        <ul>
+          <li><a href="https://www.mgadvokater.se/#omraden">Verksamhetsområden</a></li>
+          <li><a href="https://www.mgadvokater.se/#medarbetare">Medarbetare</a></li>
+          <li><a href="https://www.mgadvokater.se/kostnad/">Kostnad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+4646200151">046‑20 01 51</a></li>
+          <li><a href="mailto:info@mgadvokater.se">info@mgadvokater.se</a></li>
+          <li>Lilla Fiskaregatan 23, Lund</li>
+          <li>Södergatan 19, Malmö</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine">
+      <span>© 2026 Moll &amp; Grosskopf Advokater. Alla rättigheter förbehållna.</span>
+      <span>Sidan är optimerad för sökmotorer och AI‑assistenter.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var form = document.getElementById('rfqForm');
+  var preview = document.getElementById('preview');
+  var msg = document.getElementById('formMsg');
+  var insurance = document.getElementById('insuranceFields');
+
+  function v(id){ var el = document.getElementById(id); return el ? el.value.trim() : ""; }
+  function radioVal(){
+    var r = form.querySelector('input[name="finansiering"]:checked');
+    return r ? r.value : "Vet ej";
+  }
+  function dash(s){ return s || "–"; }
+
+  function composeBody(){
+    var fin = radioVal();
+    var lines = [
+      "OFFERTFÖRFRÅGAN – MOLL & GROSSKOPF ADVOKATER",
+      "============================================",
+      "",
+      "A. KONTAKTUPPGIFTER",
+      "Namn: " + dash(v('f-namn')),
+      "E-post: " + dash(v('f-epost')),
+      "Telefon: " + dash(v('f-tel')),
+      "Ort: " + dash(v('f-ort')),
+      "Språk: " + dash(v('f-sprak')),
+      "Önskat kontor: " + dash(v('f-kontor')),
+      "",
+      "B. ÄRENDET",
+      "Typ: " + dash(v('f-typ')),
+      "Beskrivning: " + dash(v('f-beskrivning')),
+      "Tidsfrist/domstolsdatum: " + dash(v('f-frist')),
+      "",
+      "C. MOTPART (FÖR JÄVSKONTROLL)",
+      "Namn: " + dash(v('f-motpart')),
+      "Ort: " + dash(v('f-motpart-ort')),
+      "",
+      "D. FINANSIERING",
+      "Alternativ: " + fin
+    ];
+    if (fin.indexOf("rättsskydd") !== -1 || fin.indexOf("Hemförsäkring") !== -1){
+      lines.push("Försäkringsbolag: " + dash(v('f-bolag')));
+      lines.push("Försäkrad sedan: " + dash(v('f-sedan')));
+      lines.push("Bytt bolag senaste två åren: " + dash(v('f-byte')));
+    }
+    lines.push("");
+    lines.push("Samtycke: " + (document.getElementById('f-samtycke').checked
+      ? "Ja – behandling för jävskontroll och återkoppling."
+      : "– (ej ikryssat)"));
+    lines.push("Skickad via: mgadvokater.se/offertforfragan");
+    return lines.join("\n");
+  }
+
+  function subjectLine(){
+    var typ = v('f-typ') || "juridiskt biträde";
+    var namn = v('f-namn') || "";
+    return "Offertförfrågan – " + typ + (namn ? " – " + namn : "");
+  }
+
+  function refresh(){
+    preview.textContent = composeBody();
+    var fin = radioVal();
+    var show = fin.indexOf("Hemförsäkring") !== -1;
+    insurance.hidden = !show;
+  }
+
+  function validate(){
+    var required = ['f-namn','f-epost','f-typ','f-beskrivning','f-motpart'];
+    var ok = true, first = null;
+    required.forEach(function(id){
+      var el = document.getElementById(id);
+      var bad = !el.value.trim();
+      el.classList.toggle('field-err', bad);
+      if (bad){ ok = false; if(!first) first = el; }
+    });
+    var consent = document.getElementById('f-samtycke');
+    if (!consent.checked){ ok = false; if(!first) first = consent; }
+    if (!ok){
+      msg.textContent = "Fyll i fälten markerade med * och kryssa i samtycket.";
+      msg.className = "err";
+      if (first) first.focus();
+    } else {
+      msg.textContent = "";
+      msg.className = "";
+    }
+    return ok;
+  }
+
+  document.getElementById('btnMail').addEventListener('click', function(){
+    if (!validate()) return;
+    var href = "mailto:info@mgadvokater.se"
+      + "?subject=" + encodeURIComponent(subjectLine())
+      + "&body=" + encodeURIComponent(composeBody());
+    window.location.href = href;
+    msg.textContent = "Din e‑postklient öppnas med förfrågan ifylld.";
+    msg.className = "ok";
+  });
+
+  document.getElementById('btnCopy').addEventListener('click', function(){
+    if (!validate()) return;
+    var text = "Till: info@mgadvokater.se\nÄmne: " + subjectLine() + "\n\n" + composeBody();
+    function done(){ msg.textContent = "Förfrågan kopierad – klistra in i valfritt e‑postprogram."; msg.className = "ok"; }
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(done, function(){ fallback(text); done(); });
+    } else { fallback(text); done(); }
+    function fallback(t){
+      var ta = document.createElement('textarea');
+      ta.value = t; ta.style.position = 'fixed'; ta.style.left = '-9999px';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); } catch(e){}
+      document.body.removeChild(ta);
+    }
+  });
+
+  form.addEventListener('input', refresh);
+  form.addEventListener('change', refresh);
+  refresh();
+})();
+</script>
+</body>
+</html>

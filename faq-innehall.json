@@ -1,0 +1,223 @@
+{
+  "_kommentar": "INNEHÅLLSFIL för FAQ-sidan. Redigera frågor och svar här — kör sedan 'python3 bygg_faq.py' som genererar sidan med HTML och JSON-LD i synk. Fält: 'question' (frågan), 'answer' (svaret i ren text, används i strukturerad data), 'answer_html' (valfritt: HTML-version om svaret behöver länkar), 'source' (valfritt: läs-mer-länk). Ändra inte 'id' på befintliga frågor — de är permanenta ankarlänkar.",
+  "categories": [
+    {
+      "id": "byran",
+      "title": "Byrån & kontakt",
+      "lede": "Vilka vi är, hur du når oss och varför vi frågar det vi frågar.",
+      "questions": [
+        {
+          "id": "q-om-byran",
+          "question": "Vilka är Moll & Grosskopf Advokater?",
+          "answer": "Moll & Grosskopf Advokater AB är en advokatbyrå i Lund och Malmö, grundad i augusti 2015 av advokaterna Maria Grosskopf och Cecilia Moll. Byrån har sju advokater och jurister och är medlem i Sveriges Advokatsamfund. Vi arbetar inom fem områden: brottmål, familjerätt, arvsrätt, tvångsomhändertagande (LVU, LVM, LPT) och övriga tvister."
+        },
+        {
+          "id": "q-kontakt-svarstid",
+          "question": "Hur kontaktar jag er och hur snabbt får jag svar?",
+          "answer": "Ring 046-20 01 51 eller mejla info@mgadvokater.se med kortfattad information om ditt ärende samt dina och motpartens personuppgifter. Vi återkommer inom en arbetsdag med besked om hur och om vi kan hjälpa dig vidare. Telefontid är måndag till fredag 08.00–17.00.",
+          "answer_html": "<p>Ring <a href=\"tel:+4646200151\">046‑20 01 51</a> eller mejla <a href=\"mailto:info@mgadvokater.se\">info@mgadvokater.se</a> med kortfattad information om ditt ärende samt dina och motpartens personuppgifter. Vi återkommer inom en arbetsdag med besked om hur och om vi kan hjälpa dig vidare. Telefontid är måndag till fredag 08.00–17.00.</p>"
+        },
+        {
+          "id": "q-motpart-javskontroll",
+          "question": "Varför behöver ni motpartens uppgifter redan i första kontakten?",
+          "answer": "För att kunna göra en jävskontroll. En advokat får inte åta sig ett uppdrag om det finns en intressekonflikt, till exempel om byrån redan företräder motparten. Kontrollen görs därför innan vi antar uppdraget."
+        },
+        {
+          "id": "q-kontor",
+          "question": "Var finns era kontor?",
+          "answer": "Huvudkontoret ligger på Lilla Fiskaregatan 23 i centrala Lund. I oktober 2026 flyttar Lundakontoret till Mårtenstorget 10 A. Filialkontoret ligger på Södergatan 19 i centrala Malmö och bemannas av advokat Måns Bergendorff och biträdande jurist Azar Akbarian. Båda kontoren har öppet måndag till fredag 08.00–17.00."
+        },
+        {
+          "id": "q-sprak",
+          "question": "Talar ni andra språk än svenska?",
+          "answer": "Ja. Utöver svenska och engelska finns medarbetare hos oss som talar persiska, finska och spanska."
+        }
+      ]
+    },
+    {
+      "id": "kostnad",
+      "title": "Kostnad & finansiering",
+      "lede": "Timkostnad enligt rättshjälpstaxan, rättsskydd, rättshjälp och vad staten betalar.",
+      "questions": [
+        {
+          "id": "q-timkostnad",
+          "question": "Vad kostar det att anlita advokat hos er?",
+          "answer": "Timkostnaden är 2 033 kr per timme (2026) och är densamma oavsett vilken jurist eller advokat du anlitar. Vi använder rättshjälpstaxan som Domstolsverket beslutar om, och fakturering sker löpande. I många ärenden kan kostnaden helt eller delvis täckas av rättsskydd, rättshjälp eller av staten vid offentliga uppdrag.",
+          "source": { "url": "https://www.mgadvokater.se/kostnad/", "label": "Läs mer på sidan Kostnad →" }
+        },
+        {
+          "id": "q-tidsspillan",
+          "question": "Vad är tidsspillan?",
+          "answer": "Tidsspillan är ersättning för restid och väntetid, till exempel i samband med resor till och från domstol. Den debiteras med 1 859 kr per timme (2026) utöver den ordinarie timkostnaden."
+        },
+        {
+          "id": "q-pris-testamente",
+          "question": "Vad kostar ett testamente, äktenskapsförord eller samboavtal?",
+          "answer": "Vi tillämpar timdebitering även för upprättande av handlingar. Priset, inklusive föregående konsultation, börjar vanligen vid cirka 4 000 kr inklusive moms. Observera att upprättande av handlingar inte omfattas av rättsskydd eller rättshjälp."
+        },
+        {
+          "id": "q-fast-pris",
+          "question": "Kan jag få ett fast pris i förväg?",
+          "answer": "Det är svårt att på förhand ange ett exakt totalpris eftersom kostnaden beror på hur mycket arbete ärendet kräver. Timpriset är dock alltid detsamma, fakturering sker löpande och vi tillämpar endast i enstaka fall fast pris för upprättande av handlingar."
+        },
+        {
+          "id": "q-rattsskydd",
+          "question": "Vad är rättsskydd?",
+          "answer": "Rättsskydd ingår i de flesta hemförsäkringar men villkoren kan skilja sig åt. Det söks alltid i första hand och vi hjälper dig med ansökan. För en komplett ansökan behöver du veta vilket försäkringsbolag du har, hur länge du varit försäkrad där och om du bytt bolag de senaste två åren.",
+          "source": { "url": "https://www.mgadvokater.se/kostnad/", "label": "Läs mer på sidan Kostnad →" }
+        },
+        {
+          "id": "q-rattshjalp",
+          "question": "Vad är rättshjälp och vem kan få den?",
+          "answer": "Rättshjälp är statligt stöd som kan beviljas när försäkring saknas eller inte kan utnyttjas. Ansökan fyller vi i gemensamt vid det första mötet. Din egenavgift är mellan 2 och 40 procent av kostnaden beroende på din inkomst. Det finns ett tak som innebär att höginkomsttagare utan stora skulder eller omfattande underhållsskyldighet mot barn inte kan beviljas rättshjälp."
+        },
+        {
+          "id": "q-nekad-finansiering",
+          "question": "Vad händer om jag nekas både rättsskydd och rättshjälp?",
+          "answer": "Då bär du själv hela kostnadsansvaret. Vi begär i sådana fall in ett förskott på arvodet, som sätts in på klientmedelskonto, och delfakturerar sedan löpande."
+        },
+        {
+          "id": "q-offentliga-uppdrag",
+          "question": "Vem betalar för offentlig försvarare, målsägandebiträde och biträde i LVU-, LVM- och LPT-mål?",
+          "answer": "Arvodet till målsägandebiträde och till offentligt biträde enligt LVU, LVM och LPT betalas alltid av staten. För offentlig försvarare gäller att återbetalningsskyldighet endast uppstår om du döms för brottet, och då i en omfattning som beror på din inkomst."
+        },
+        {
+          "id": "q-betala-faktura",
+          "question": "Hur betalar jag en faktura?",
+          "answer": "Arvodesfakturor betalas till bankgiro 899-9344 – märk inbetalningen med fakturanummer. Förskott betalas till klientmedelskontot, bankgiro 899-9385 – märk inbetalningen med personnummer eller för- och efternamn. IBAN och BIC för utlandsbetalningar finns på vår kostnadssida.",
+          "source": { "url": "https://www.mgadvokater.se/kostnad/", "label": "Fullständig betalningsinformation →" }
+        }
+      ]
+    },
+    {
+      "id": "brottmal",
+      "title": "Brottmål",
+      "lede": "För dig som är misstänkt – och för dig som har utsatts för brott.",
+      "questions": [
+        {
+          "id": "q-kallad-till-forhor",
+          "question": "Jag har kallats till polisförhör – vad ska jag göra?",
+          "answer": "Kontakta en advokat så tidigt som möjligt, gärna innan förhöret hålls. Det kan förbättra ditt utgångsläge och du får klart för dig vilka rättigheter du har under förhöret. Det händer att man kallas till förhör utan mer information än tiden för förhöret – ring oss så hjälper vi dig, bland annat med samtalet till polisen.",
+          "source": { "url": "https://www.mgadvokater.se/brottmal/", "label": "Läs mer om brottmål →" }
+        },
+        {
+          "id": "q-valja-forsvarare",
+          "question": "Kan jag välja min egen försvarare?",
+          "answer": "Ja. Om du är misstänkt för brott har du rätt att biträdas av den försvarare du själv väljer. Du kan kontakta polisen innan förhöret och begära att den advokat du önskar utses till offentlig försvarare, eller kontakta oss så hjälper vi dig med det samtalet."
+        },
+        {
+          "id": "q-offentlig-privat-forsvarare",
+          "question": "Vad är skillnaden mellan offentlig och privat försvarare?",
+          "answer": "En offentlig försvarare förordnas av domstolen och betalas av staten – du kan bli återbetalningsskyldig endast om du döms, i en omfattning som beror på din inkomst. Har du inte rätt till offentlig försvarare kan du anlita en advokat som privat försvarare och står då själv för kostnaden. Vid en frikännande dom kan du få ersättning från staten för kostnaderna för försvaret."
+        },
+        {
+          "id": "q-malsagandebitrade",
+          "question": "Vad är ett målsägandebiträde och vem har rätt till det?",
+          "answer": "Ett målsägandebiträde är en jurist eller advokat som stöttar dig som har utsatts för brott. Rätten gäller framför allt vid allvarligare brott och sexualbrott, och oftast även vid brott i nära relation. Du väljer själv vem du vill ha – hos oss finns både manliga och kvinnliga jurister med god vana av uppdragen. Biträdet ger råd och stöd inför och under polisförhör samt under rättegången."
+        },
+        {
+          "id": "q-skadestand",
+          "question": "Hjälper ni mig att kräva skadestånd?",
+          "answer": "Ja. Som ditt målsägandebiträde driver vi din skadeståndstalan mot den eller de som åtalas för brott mot dig. Du behöver inte själv räkna ut vad som är rimligt eller skriva något till domstolen om yrkanden och bevisning – det ordnar vi."
+        }
+      ]
+    },
+    {
+      "id": "familjeratt",
+      "title": "Familjerätt",
+      "lede": "Vårdnad, boende och umgänge, bodelning och underhåll – alltid med barnets bästa i fokus.",
+      "questions": [
+        {
+          "id": "q-vardnadstvist",
+          "question": "Vad gör jag om vi inte kommer överens om vårdnad, boende eller umgänge?",
+          "answer": "Börja med att söka rådgivning så tidigt som möjligt. I många fall kan en genomtänkt strategi och tydlig kommunikation lösa situationen utan en lång rättsprocess; när det inte går kan det bli nödvändigt att inleda en domstolsprocess. Vi hjälper dig genom hela processen – rådgivning, förhandling, ansökan om ensam vårdnad, avtal om umgänge, tillfälliga beslut i akuta situationer och som ombud i domstol. Barnets bästa är alltid utgångspunkten.",
+          "source": { "url": "https://www.mgadvokater.se/familjeratt/", "label": "Läs mer om familjerätt →" }
+        },
+        {
+          "id": "q-bodelning-skilsmassa",
+          "question": "Vad ingår i en bodelning vid skilsmässa?",
+          "answer": "Vid en äktenskapsskillnad delas makarnas gemensamma giftorättsgods upp, efter att den enskilda egendomen separerats. Vanliga frågor är vilken egendom som är enskild, dold samäganderätt, tidpunkten för värdering och hur en fiktiv fastighetsförsäljning beräknas när en part löser ut den andra. En bodelning ska också vara skälig. Kommer ni inte överens kan en bodelningsförrättare utses, och är du missnöjd med en tvångsbodelning kan vi hjälpa dig med en klandertalan i domstol."
+        },
+        {
+          "id": "q-bodelning-sambo",
+          "question": "Vad gäller vid bodelning mellan sambor?",
+          "answer": "Vid bodelning i ett samboförhållande ingår endast den gemensamma bostaden och bohaget, om inte ett samboavtal bestämmer något annat. Bodelningen måste påkallas i tid – inom ett år från separationen. Det är inte alltid självklart när ett samboförhållande anses inlett eller avslutat i lagens mening, vilket kan kräva juridisk bedömning."
+        },
+        {
+          "id": "q-bodelningsforrattare",
+          "question": "Vad är en bodelningsförrättare och vem betalar?",
+          "answer": "En bodelningsförrättare är en jurist eller advokat som utses för att besluta om bodelningen när parterna inte kommer överens. Båda parter delar i regel lika på kostnaden. På byrån finns medarbetare med den utbildning och erfarenhet som krävs för uppdraget."
+        },
+        {
+          "id": "q-underhallsbidrag",
+          "question": "Kan ni hjälpa till med underhållsbidrag till barn?",
+          "answer": "Ja. Vi ger råd om hur barnets behov och föräldrarnas förmåga beräknas, hjälper till med jämkning (ändring) av befintliga avtal eller domar och för din talan i domstol. Underhållsbidrag som fastställs i avtal eller dom beaktar fler omständigheter än de som ligger till grund för Försäkringskassans underhållsstöd."
+        }
+      ]
+    },
+    {
+      "id": "arvsratt",
+      "title": "Arvsrätt",
+      "lede": "Testamente, bouppteckning, arvskifte och tvister mellan arvingar.",
+      "questions": [
+        {
+          "id": "q-arvsratt-hjalp",
+          "question": "Vad hjälper ni till med inom arvsrätt?",
+          "answer": "Vi hjälper till med testamente, bouppteckning, arvskifte och tvister mellan arvingar. Formkraven för ett testamente är stränga och måste uppfyllas för att dokumentet ska bli giltigt. På byrån finns även medarbetare med den utbildning och erfarenhet som krävs för uppdrag som bodelningsförrättare, boutredningsman och skiftesman.",
+          "source": { "url": "https://www.mgadvokater.se/arvsratt/", "label": "Läs mer om arvsrätt →" }
+        },
+        {
+          "id": "q-testamente-rattsskydd",
+          "question": "Täcks testamente och arvskifte av rättsskydd eller rättshjälp?",
+          "answer": "Nej. Upprättande av arvskifteshandling eller testamente omfattas inte av rättsskyddet, och rättshjälp kan inte beviljas för dessa ärenden. Kostnaden betalar du själv enligt vår timdebitering."
+        },
+        {
+          "id": "q-boutredningsman-kostnad",
+          "question": "Vem betalar en boutredningsman eller skiftesman?",
+          "answer": "Uppdrag som boutredningsman eller skiftesman bekostas av dödsboet. För uppdraget som bodelningsförrättare delar parterna i regel lika på kostnaden."
+        }
+      ]
+    },
+    {
+      "id": "tvangsvard",
+      "title": "Tvångsvård – LVU, LVM & LPT",
+      "lede": "Stöd och företrädande i förvaltningsrätt och kammarrätt vid tvångsomhändertaganden.",
+      "questions": [
+        {
+          "id": "q-lvu",
+          "question": "Vad är LVU och vad händer om mitt barn omhändertas?",
+          "answer": "LVU är lagen med särskilda bestämmelser om vård av unga och innebär att barn och unga kan tvångsvårdas när socialnämnden anser att frivilliga insatser inte räcker. Placeringen kan ske i jourhem, familjehem eller på låst institution. Föräldrar och den unge kan ha en annan uppfattning om vårdbehovet eller vårdplanen, och då är det betydelsefullt att ha ett biträde som ger råd och stöd och som företräder den enskilde i förvaltningsrätten. Vi har lång erfarenhet av rollen som biträde i dessa mål.",
+          "source": { "url": "https://www.mgadvokater.se/tvangsomhandertagande-lvu-lvm-lpt/", "label": "Läs mer om tvångsomhändertagande →" }
+        },
+        {
+          "id": "q-lvm",
+          "question": "Vad är LVM?",
+          "answer": "LVM är lagen om vård av missbrukare i vissa fall. När socialnämnden anser att ett missbruk utgör en fara för ditt liv och din hälsa kan den ansöka om tvångsvård. Du kanske inte håller med om att du har ett missbruk, eller anser att vård kan ges på frivillig väg – vi för fram din inställning, argumenterar för din syn på saken och stöttar dig genom processen i domstolen."
+        },
+        {
+          "id": "q-lpt-lrv",
+          "question": "Vad är LPT och LRV?",
+          "answer": "LPT är lagen om psykiatrisk tvångsvård och LRV lagen om rättspsykiatrisk vård. Om du har tagits in på sjukvårdsinrättning mot din vilja eller tvingats till sluten eller öppen psykiatrisk vård genom en läkares beslut har du rätt till ett biträde – ett ombud som hjälper dig att föra fram din inställning och föra din talan inför domstolen."
+        },
+        {
+          "id": "q-bitrade-kostnad-tvangsvard",
+          "question": "Kostar det något att ha ett biträde i mål om tvångsvård?",
+          "answer": "Nej. Arvodet till offentligt biträde enligt LVU, LVM och LPT betalas alltid av staten."
+        }
+      ]
+    },
+    {
+      "id": "ovriga-tvister",
+      "title": "Övriga tvister",
+      "lede": "Civilrättsliga tvister om avtal, fordringar och skadestånd.",
+      "questions": [
+        {
+          "id": "q-ovriga",
+          "question": "Vilka övriga tvister kan ni hjälpa till med?",
+          "answer": "Vi företräder dig i civilrättsliga tvistemål – till exempel om du behöver hjälp att tolka ett avtal, har fått en räkning som inte stämmer, inte har fått betalt eller har blivit stämd. Vi arbetar även med skadestånd och tvister om fel i fastighet, och tar oss an ärenden där andra tvekar.",
+          "source": { "url": "https://www.mgadvokater.se/ovriga-tvister/", "label": "Läs mer om övriga tvister →" }
+        }
+      ]
+    }
+  ]
+}
